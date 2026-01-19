@@ -103,11 +103,11 @@
     <main>
         <section class="py-1 my-1">
             <div class="container">
-                <div class="col-xl-9 text-center mx-auto">
+                <div class="col-xl-12 text-center mx-auto">
                     <h2 class="fw-bold w-75 mx-auto mb-3">{{ __('messages.home_video_title') }}</h2>
                     <p style="font-weight: 500;">{{ __('messages.home_video_text') }}</p>
                     <div class="shadow-lg rounded-5 overflow-hidden mt-5">
-                        <iframe width="100%" height="365"
+                        <iframe width="100%" height="500"
                             src="https://www.youtube.com/embed/jyDhOLUQ6vU?si=jblI0-UTyvIXloJC" title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
