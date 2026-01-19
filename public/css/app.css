@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ @import url("./fontawesome.css");
+/* @import url("./remixicon.css"); */
+@import url("./bootstrap.css");
+@import url("./toastr.min.css");
+@import url("./navbar.css");
+
+:root{
+    --primary: #1E56A6;
+    --gray: #333333;
+    --whatsapp: #1ECD67;
+    --twitter: #1C9BE9;
+    --facebook: #0863F7;
+    --mail: #AD3B32;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-gray{
+    background-color: #9299a0;
+    color: #ffffff;
+}
+
+.btn-whatsapp{
+    background-color: var(--whatsapp);
+    color: white;
+}
+
+.btn-twitter{
+    background-color: var(--twitter);
+    color: white;
+}
+
+.btn-facebook{
+    background-color: var(--facebook);
+    color: white;
+}
+
+.btn-mail{
+    background-color: var(--mail);
+    color: white;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary{
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline-primary:hover{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.border-primary{
+    border-color: var(--primary) !important;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.bg-warning{
+    color: FFC20F !important;
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+
+.bg-secondary{
+    background-color: var(--gray) !important;
+}
+
+
+.title-line{
+    height: 3px;
+    width: 100%;
+    background-color: #32393F;
+    margin-bottom: 16px;
+}
+
+.list-group-item.active{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.card-h-word-4{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+}
+
+/* ------------------------------------------- */
+
+body{
+    min-height: 100vh;
+}
+
+footer{
+    position: sticky;
+    top: 100%;
+}
+
+.th-2{
+    width: 66px;
+}
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 26px;
+}
+
+.th-sortable{
+    width: 12px;
+}
+
+.th-image{
+    width: 99px;
+}
+
+#previewImage{
+    width: 99px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+footer h2{
+    font-size: 16px;
+}
+
+footer ul ol a, footer ul ol{
+    font-size: 14px !important;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+}
+
+footer ul ol a:hover{
+    color: var(--primary);
+}
+
+.cursor-pointer{
+    border-color: var(--primary);
+}
+
+/* about */
+/* ******************************* */
+.timeline-area{
+    margin: 90px auto;
+    border-left: 2px solid #ccc;
+    padding: 0 20px 0 30px;
+}
+.timeline-content{
+    background-color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    line-height: 1.7;
+    position: relative;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.timeline-content::before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    border: 3px solid #ddd;
+    position: absolute;
+    top: 50%;
+    left: -42px;
+    transform: translateY(-50%);
+}
+
+
+/* photos */
+.photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 69%;;
+    z-index: 3;
+    background: linear-gradient(to top, var(--primary), transparent); /* Maviye doğru transparan gradient */
+}
+
+.photo-content{
+    z-index: 5;
+}
+
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.content-table thead tr {
+    background-color: var(--primary);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    width: 116px; /* Ürün adı maksimum genişlik */
+    word-wrap: break-word;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--primary);
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.hexagon-container {
+    width: 90px; /* Altıgenin genişliği */
+    height: 105px; /* Altıgenin yüksekliği, altıgenin uzunluk/yükseklik oranı 1:1.15 */
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .hexagon {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff; /* Altıgenin rengi */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Altıgenin şekli */
+  }
+
+  /* Font Awesome ikonunun stilini belirtmek için örnek bir CSS */
+.home-down i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary); /* Ikon rengi */
+    font-size: 24px; /* Ikon boyutu */
+}
+
+
+/* ********************************** */
+.home-down{
+    min-height: 350px;
+    background: var(--primary);
+    position: relative;
+}
+
+.home-down .col2{
+    overflow: hidden;
+    transition: .6s ease;
+}
+
+.home-down button{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 9px 29px;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition: .6s ease;
+}
+
+.home-down .col2:hover{
+    background-color: #1A3D60;
+}
+
+.home-down .col2:hover button{
+    bottom: 0;
+}
+
+.home-categories li{
+    position: relative;
+    font-weight: 500;
+    color: white;
+    transition: .5s ease;
+}
+
+.home-categories li:hover{
+    padding-left: 26px !important;
+    color: var(--primary) ;
+}
+
+.home-categories li:hover::before{
+    content: "";
+    position: absolute; /* Diğer öğelerle çakışmadan pozisyonlamak için */
+    top: 50%; /* Üstten itibaren konumlandırma */
+    left: -120px; /* Soldan itibaren konumlandırma */
+    width: 120px; /* Yatay genişlik */
+    height: 3px; /* Çizgi kalınlığı */
+    background-color: var(--primary); /* Çizgi rengi */
+    z-index: 3;
+}
+
+.home-categories li:hover i{
+    display: inline-block;
+}
+
+.home-categories li.active{
+    color: var(--primary) !important;
+}
+
+.home-categories li.active::before{
+    display: block;
+}
+
+.home-categories li i{
+    display: none;
+}
+
+.home-categories li.active i{
+    display: inline-block;
+}
+
+.home-categories .col-xl-4{
+    top: -60px;
+    right: 0;
+}
+
+#homeCategoriesImage{
+    height: 0;
+    width: 100%;
+    object-fit: cover;
+    transition: .6s ease;
+}
+
+.home-categories{
+    min-height: 440px;
+}
+
+.home-categories .col-xl-8{
+    order: 2;
+}
+
+.home-categories .col-xl-4{
+    position: absolute;
+    order: 1;
+    background: url('https://html.themexriver.com/industo/images/background/2.jpg') no-repeat;
+}
+
+@media (max-width: 789px) {
+    .home-categories .col-xl-4{
+        position: relative !important;
+        display: block !important;
+    }
+
+    .home-categories .col-xl-8{
+        order: 2;
+    }
+
+    .home-categories .col-xl-4{
+        order: 1;
+    }
+}
+
+#homeCategoriesImage.active{
+    height: 440px;
+}
+
+@keyframes faGearRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.homeHardSection .fa-gear{
+    animation: faGearRotate 6s linear infinite;
+}
+
+@media (min-width:1024px) {
+    .home-down{
+        background: url('https://st.ourhtmldemo.com/template/fct-press/img/resources/feature-bg.jpg') bottom center no-repeat;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

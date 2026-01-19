@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 675.4 139.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-2 {
+        fill: url(#Adsız_degrade_56);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #fcbd1b;
+      }
+
+      .cls-4 {
+        fill: #1e56a6;
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-1" d="M-.74-.74v139.67C326.21,11.26,675.4-.74,675.4-.74H-.74Z"/>
+    </clipPath>
+    <linearGradient id="Adsız_degrade_56" data-name="Adsız degrade 56" x1="-3.6" y1="71.42" x2="675.4" y2="71.42" gradientTransform="translate(674.66 140.52) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#293275"/>
+      <stop offset="1" stop-color="#1e56a6"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <path class="cls-1" d="M1399.54-.74s-349.14,12-676.14,139.67V-.74h676.14Z"/>
+    </clipPath>
+  </defs>
+  <g class="cls-6">
+    <g>
+      <rect class="cls-2" x="-.74" y="-1.06" width="679" height="140.32"/>
+      <path class="cls-4" d="M-83.63-.74s-182.96,280.93-80.65,158.41C-61.97,35.15,637.72-.74,637.72-.74H-83.63Z"/>
+    </g>
+  </g>
+  <g class="cls-5">
+    <path class="cls-3" d="M1361.86-.74s-699.69,35.89-802,158.41C457.55,280.19,640.51-.74,640.51-.74h721.35Z"/>
+  </g>
+</svg>
